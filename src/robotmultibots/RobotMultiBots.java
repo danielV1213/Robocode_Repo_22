@@ -1,5 +1,6 @@
 /*
  MultiBots 2022.
+ Juan José Jiménez Solís y Daniel Andrés Vélez Vargas.
  */
 package robotmultibots;
 
