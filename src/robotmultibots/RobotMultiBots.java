@@ -25,11 +25,10 @@ public class RobotMultiBots extends Robot {
         double bFWidth = getBattleFieldWidth(), bFHeight = getBattleFieldHeight();
         //Set RocketTank colors
         setBodyColor(Color.black);
-        setGunColor(Color.red);
+        setGunColor(Color.blue);
         setRadarColor(Color.green);
         setBulletColor(Color.orange);
-//        setAdjustGunForRobotTurn(false);
-//        setAdjustRadarForRobotTurn(false);
+        setScanColor(Color.MAGENTA);
 
         moveAmount = Math.max(bFWidth / 3, bFHeight / 3);
         peek = false;
@@ -108,6 +107,7 @@ public class RobotMultiBots extends Robot {
     public void onHitByBullet(HitByBulletEvent e) {
         // Replace the next line with any behavior you would like
         back(100);
+        turnRight(100);
     }
 
     /**
